@@ -9,9 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
@@ -22,5 +19,8 @@
     "multer": "^1.4.5-lts.1",
     "request": "^2.88.2",
     "unique-username-generator": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
