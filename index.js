@@ -11,6 +11,7 @@ mongoose.connect(process.env.DB_CONNECT, () => console.log("Connected to MongoDB
 const postsRoute = require('./routes/postsRoute');
 const commentRoute = require('./routes/commentRoute');
 const usrGenRoute = require('./routes/usrGenRoute');
+const port = process.env.PORT || 5000;
 
 //Middleware
 app.use(express.json());
@@ -29,4 +30,4 @@ app.use('/api', postsRoute);
 app.use('/api', commentRoute);
 app.use('/api', usrGenRoute);
 
-app.listen(3000, () => console.log("Server up and running..."));
+app.listen(port, () => console.log(`Server up and running on port ${port}...`));
